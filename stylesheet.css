@@ -1,0 +1,416 @@
+html, body, div, span, 
+h1, h2, h3, p, 
+img, 
+ul, li,
+footer, header, nav, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+footer, header, nav, section { 
+    display: block;
+}
+
+nav ul {
+    list-style:none;
+    height: 100%;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* Website */
+html, body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #262829;
+    background: white;
+    line-height: 1.4;
+    height: 100%;
+    min-width: 1000px;
+}
+
+/* Fixed NavBar */
+nav {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: url("images/background1.jpeg") 50% 0 fixed;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .7);
+    text-align: right;
+}
+
+.container {
+    position: relative;
+    max-width: 1140px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.padded {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 2em;
+}
+
+/* NavBar Links */
+nav ul li {
+    display: inline-block;
+    height: 100%;
+    padding-right: .2em;
+}
+
+nav li a {
+    display: inline-block;
+    padding: 1em 1em 0 0;
+    height: 100%;
+    font-weight: 500;
+    color: #909090;
+}
+
+#nav-menu a:hover {
+    color: #333;
+}
+
+#nav-menu li.selected a {
+    color: #333;
+}
+
+#social-links {
+    position: absolute;
+    top: 0;
+    right: 1em;
+    overflow: visible;
+    visibility: visible;
+}
+
+#social-links li {
+    background-color: #262829;
+    overflow: visible;
+    height: auto;
+}
+
+#social-links li ul {
+    display: none;
+    margin-left: -.75em;
+    padding-top: .5em;
+    padding-right: 1em;
+    position: fixed;
+}
+
+#social-links li ul a {
+    padding: .1em 1em .25em 1em;
+}
+
+#social-links li ul a:hover {
+    color: #333;
+}
+
+#social-links li ul li {
+    display: block;
+}
+
+#social-links li:hover ul {
+    display: block;
+}
+
+/* Header Image */
+#home {
+    padding-top: 100px;
+}
+
+#home img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #21abc9;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #333;
+}
+
+/* Main Page */
+.page-section {
+    padding-bottom: 50px;
+}
+
+.page-section-dark {
+    padding-bottom: 60px;
+    background-color: #4d4d4d;
+}
+
+.page-section-blue {
+    padding-bottom: 50px;
+    background-color: #21abc9;
+}
+
+.section-info {
+    padding: 9em 4em 0 4em;
+}
+
+/* Title Tab */
+.section-title {
+    position: absolute;
+    margin-top: 60px;
+    padding-top: .8em;
+    width: 10em;
+    height: 2em;
+    background-color: #262829;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+}
+
+.page-section-dark .section-title, .page-section-blue .section-title {
+    background-color: white;
+    color: #262829;
+}
+
+/* Title */
+.section-subtitle {
+    margin: 0 auto 1em auto;
+    width: 90%;
+    line-height: 1.3;
+    font-size: 1.6em;
+    font-weight: 500;
+    text-align: center;
+}
+
+.page-section-dark .section-subtitle, .page-section-blue .section-subtitle {
+    color: white;
+}
+
+.section-small {
+    font-size: 1em;
+}
+
+/* Title Highlights */
+.section-subtitle span {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #e95a50;
+}
+
+/* Buzz */
+.section-buzz {
+    float: left;
+    margin-right: 5%;
+    width: 42%;
+    line-height: 1.3;
+    font-size: 1.6em;
+    font-weight: 500;
+}
+
+/* Buzz Highlights */
+.section-buzz span {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #21abc9;
+}
+
+/* Descriptions */
+.section-desc {
+    float: left;
+    width: 53%;
+}
+
+.section-desc p {
+    margin-bottom: .5em;
+    font-weight: 400;
+}
+
+/* Photo Gallery */
+.section-photos {
+    clear: left;
+    margin: 0 auto;
+    padding-top: 2em;
+    width: 872px;
+}
+
+.section-photos .thumbnails {
+    float: left;
+    margin-top: 27.5px;
+}
+
+.section-photos .thumbnail-row {
+    float: left;
+    clear: left;
+    margin-bottom: 4px;
+}
+
+.section-photos .thumbnail-row img {
+    display: block;
+    float: left;
+    margin-right: 4px;
+    width: 98px;
+    border: 3px solid #a8a8a8;
+    border-radius: 2px;
+}
+
+.section-photos .thumbnail-row .shown {
+    border-color: #21abc9;
+}
+
+.section-photos .display-image {
+    float: left;
+    width: 650px;
+    height: 385px;
+    border: 3px solid #e95a50;
+    border-radius: 2px;
+    opacity: 0;
+}
+
+.section-photos .image-caption {
+    clear: left;
+    margin-left: 219px;
+    padding-top: 10px;
+    width: 650px;
+    height: 50px;
+    text-align: center;
+}
+
+/* Donate Button */
+.section-donate {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.section-donate .donate-button {
+    padding: 6px 12px;
+    font-size: 1em;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: white;
+    font-family: "Exo",sans-serif;
+}
+
+.section-donate .donate-button2 {
+    padding: 6px 12px;
+    font-size: 1em;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: white;
+    font-family: "Exo",sans-serif;
+}
+.section-donate .donate-button2:hover {
+    background-color: #4d4d4d;
+    color: white;
+}
+
+/* Sponsors */
+#sponsors .sponsor-row {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#sponsors .image-link img {
+    position: relative;
+    top: 4px;
+    margin: .75em 1.5em;
+    opacity: 1;
+    transition: all 250ms;
+    -webkit-transition: all 250ms;
+    -moz-transition: all 250ms;
+    -ms-transition: all 250ms;
+    -o-transition: all 250ms;
+}
+
+#sponsors .image-link img:hover {
+    top: 0;
+    opacity: .7;
+}
+
+/* Footer */
+footer {
+    padding-top: 3em 1em;
+    background: url("images/background1.jpeg") 100% 0 fixed;
+    color: #3D3935;
+    font-size: .9em;
+    text-align: left;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .7);
+}
+
+footer .container {
+    position: relative;
+    min-height: 22em;
+}
+
+footer .footer-col {
+    float: left;
+    margin-left: 2%;
+    padding: 0 25px;
+    width: 29%;
+}
+
+footer .footer-col:first-child {
+    margin-left: 0;
+}
+
+footer h3 {
+    letter-spacing: 4px;
+    margin-top: 1em;
+    margin-bottom: .4em;
+    font-size: .9em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+footer p {
+    margin-top: .5em;
+    margin-left: .4em;
+    line-height: 1.3;
+}
+
+/* EWB Logo */
+#footer-logo {
+    position: absolute;
+    bottom: 4em;
+    left: 4em;
+    height: 100px;
+}
+
+/* Social Media */
+footer #footer-social .social-link {
+    display: inline-block;
+    margin-right: 10px;
+    width: 29px;
+    height: 29px;
+    /* background-color: #b0b0b0; */
+    background-image: url("images/social.png");
+}
+
+footer #footer-social .social-link:hover {
+	background-color: #21abc9;
+}
+
+footer #facebook {background-position: 1px 0;}
+footer #google {background-position: -31px 0;}
+footer #twitter {background-position: -62px 0;}
+footer #git {background-position: -93px 0;}
